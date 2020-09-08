@@ -10,14 +10,16 @@ export class AppComponent {
   lead: string;
   searchResult: boolean;
 
-  constructor(){
+  constructor() {
     this.title = "Food App";
     this.lead = "Ordering Food, has never been easier"
     this.searchResult = false;
 
   }
-  search() {
+  search(event) {
     this.searchResult = true;
+    event.preventDefault();
+
   }
- 
+
 }
